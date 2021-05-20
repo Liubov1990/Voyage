@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+  
+  .container-fluid{
+   padding: 0;
+  }
+  
+  .container-xl {
+    max-width: 1194px;
+  }
+  
+  .wrapper {
+    display: flex;
+    width: 100%;
+    background: #2c3e50; 
+  }
