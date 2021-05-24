@@ -1,10 +1,12 @@
+@import "./variables";
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9375rem;
     font-weight: 400;
-    color: #ffffff;
-    background-color: #ffffff;
+    color: $whiteColor;
+    background-color: $whiteColor;
   }
   
   .container-fluid{
@@ -12,11 +14,31 @@ body {
   }
   
   .container-xl {
-    max-width: 1194px;
+    max-width: 1200px;
+    padding: 0 15px;
   }
   
   .wrapper {
     display: flex;
     width: 100%;
-    background: #2c3e50; 
+    background: $backgroundColor;
   }
+
+  .inner-color {
+    color: $hoverColor;
+  }
+
+  a {
+    color: $whiteColor;
+    text-decoration: none;
+    cursor: pointer;
+
+
+      &:hover, &:focus {
+        color: $hoverColor; 
+    }
+  }
+
+
+  
+  

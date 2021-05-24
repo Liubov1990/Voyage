@@ -1,0 +1,7 @@
+@import "./variables";
+
+@mixin smallTwoColoursBorder {
+    height: 40px;
+    border-right: 1px solid $werticalLineColor;
+    box-shadow: 1px 0px 0px 0px #374d63;
+}
