@@ -1,0 +1,117 @@
+
+@media (max-width: 1199.98px) {
+    header {
+        font-size: 0.7rem !important;
+
+        span {
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 767.98px) { 
+    header {
+        .header-bar {
+            flex-direction: column;
+            height: auto !important;
+
+            .header-bar__autorization {
+                .header-bar--rline {
+                    border-right: none;
+                    box-shadow: none;  
+                    padding-right: 0px;
+                }   
+            }
+
+            .header-bar__social {
+                align-self: flex-end;
+
+                i {
+                    height: 30px;
+                    border-right: none;
+                    box-shadow: none;
+                }
+
+                .header-icon--rpdd {
+                    padding-right: 0px;
+                }
+            }
+        }
+
+        .navbar {
+            .navbar-brand {
+                font-size: 1.8rem !important;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    header {
+        .header-bar {
+            .header-bar__social {
+                width: 100%;
+                padding-top: 4px;
+
+                .logo-min--media {
+                    display: flex;
+                }
+            }
+        }
+        
+        .navbar {
+            .navigation__bar {                
+                .logo {
+                    display: none;
+                }
+                
+                .navigation__wrapper {
+                    width:  100%;
+                    line-height: 10px;
+
+                    .navbar-nav {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 80%;
+                        align-items: center;
+
+                        .nav-link {
+                            padding: 3px 8px;
+                        }
+                    }  
+                }
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 430.98px) {
+    header {
+        .header-bar {
+           .header-bar__autorization {
+               padding-top: 5px;
+               height: 60px !important;
+               
+                div {
+                    padding: 0 5px;
+                }
+            } 
+        }
+
+        .navbar {
+            .navigation__bar {    
+                .navigation__wrapper {
+                    .navbar-nav {
+                        a {
+                            padding: 1px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

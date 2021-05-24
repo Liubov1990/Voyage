@@ -1,0 +1,117 @@
+header {
+    font-size: 0.938rem;
+
+    .header-bar {
+        height: 40px;
+        font-weight: 300;
+        line-height: 22px;
+        i {
+            font-size: 16px;
+        }
+
+        &__autorization {
+            a {
+                cursor: default;
+            }
+            .header-bar--pdd {
+                padding-left: 0;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                @include smallTwoColoursBorder;
+            }
+            i {
+                margin-right: 5px;
+            }   
+        }
+
+        &__social {
+            .logo-min--media {
+                display: none;
+                align-self: center;
+                text-transform: uppercase;
+            }
+
+            // .header-bar--mod {
+            //     border-left: 1px solid $werticalLineColor ;
+            //     // box-shadow: -1px 0px 0px 0px #374d63;
+            //     // @include smallTwoColoursBorder;
+            // }
+
+            i {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                padding: 0 15px;
+                @include smallTwoColoursBorder;
+            }
+            
+        }
+    
+    }
+
+    .navbar {
+        max-height: 90px;
+        text-transform: uppercase;
+
+        .navbar-brand {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 59px;
+            color: $backgroundColor;
+        }
+        
+        .navigation__wrapper {
+            justify-content: space-between;
+            line-height: 60px;
+
+            .navbar-nav {
+                font-weight: 500;
+
+                .nav-link {
+                    color: $navTextColor;
+
+                     &:hover, &:active {
+                        color: $hoverColor;
+                    }
+                }
+            }
+            
+            .navigation__search {
+                align-self: center;
+                position: relative;
+                box-sizing: border-box;
+                width: 42px;
+                height: 42px;
+                border: 3px solid $backgroundColor;
+                border-radius: 100px;
+                cursor: pointer;
+                margin-left: 15px;
+
+                i {
+                    position: absolute;
+                    top: 7px;
+                    left: 8px;
+                    font-size: 1.25rem;
+                    color: $backgroundColor;
+                }
+            }
+            
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+// button{
+//     background-color: transparent;
+//     color: $whiteColor;
+// }
