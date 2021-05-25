@@ -1,43 +1,51 @@
 @import "./variables";
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.9375rem;
-    font-weight: 400;
-    color: $whiteColor;
-    background-color: $whiteColor;
-  }
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: $whiteColor;
+  background-color: $whiteColor;
+}
   
-  .container-fluid{
-   padding: 0;
-  }
+.container-fluid{
+  padding: 0;
+}
   
-  .container-xl {
-    max-width: 1200px;
-    padding: 0 15px;
-  }
+.container-xl {
+  max-width: 1200px;
+  padding: 0 15px;
+}
   
-  .wrapper {
-    display: flex;
-    width: 100%;
-    background: $backgroundColor;
+.wrapper {
+  display: flex;
+  width: 100%;
+  background: $backgroundColor;
+}
+
+.inner-color {
+  color: $hoverColor;
+}
+
+a {
+  color: $whiteColor;
+  text-decoration: none;
+  cursor: pointer;
+
+
+  &:hover, &:focus {
+    color: $hoverColor; 
   }
+}
 
-  .inner-color {
-    color: $hoverColor;
-  }
+.btn:focus {
+  box-shadow: none;
+}
 
-  a {
-    color: $whiteColor;
-    text-decoration: none;
-    cursor: pointer;
-
-
-      &:hover, &:focus {
-        color: $hoverColor; 
-    }
-  }
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: none;
+}
 
 
   
