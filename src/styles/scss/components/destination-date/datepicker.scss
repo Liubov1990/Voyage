@@ -1,0 +1,67 @@
+.datepicker--nav-title i {
+    color: unset;
+}
+
+.datepicker--nav-action:hover, .datepicker--nav-title:hover {
+    background: $destinationDateBorderColorLight;
+}
+
+.datepicker--day-name {
+    color: $hoverColor;
+}
+
+.datepicker--cell.-current- {
+    color: $hoverColor;
+}
+
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current- {
+    background: $backgroundColorDark;
+}
+
+.datepicker--cell.-selected-.-focus- {
+    background: $hoverColor;
+}
+
+.datepicker--cell.-focus- {
+    background: $findHolidaysColorLight;
+}
+
+.datepicker--cell.-range-to-, .datepicker--cell.-range-from-  {
+    border-color: $hoverColor;
+}
+
+.datepicker--cell.-in-range- {
+    background: $destinationDateBorderColorLight;
+}
+
+.datepicker--cell.-in-range-.-focus- {
+    background-color: $hoverColorLight;
+}
+
+.datepicker--cell.-current-.-in-range- {
+    color: $hoverColor;
+}
+
+.-in-range-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: $findHolidaysColorLight;
+}
+
+.-in-range-.-focus-.datepicker--cell-day.-other-month-, .-in-range-.datepicker--cell-year.-other-decade- {
+    background-color: $hoverColorLight;
+}
+
+.-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    background: $backgroundColorMedium;
+}
+
+.-selected-.-focus-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-year.-other-decade- {
+    background: $hoverColorMedium;
+}
+
+.datepicker--button {
+    color: $hoverColor;
+}
+
+.datepicker--button:hover {
+    background: $destinationDateBorderColorLight;
+}

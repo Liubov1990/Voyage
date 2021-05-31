@@ -1,0 +1,130 @@
+@import "./datepicker.scss";
+
+@import "./media.scss";
+
+.destination-date {
+    height: 105px;
+    min-height: 105px;
+
+    .destination-date__arrow-block {
+        position: relative;
+        height: 100%;
+        border-right: 1px solid $destinationDateBorderColor;
+        background: $backgroundColor;
+        color: $findHolidaysColor;
+        margin-right: 5px;
+        box-sizing: border-box;
+
+        &::after, &::before {
+            content: ""; 
+            position: absolute; 
+            left: 100%;
+            top: 50%;
+            border: solid transparent;  
+        }
+
+        &::after {
+            border-left-color: $backgroundColor;
+            border-width: 8px;
+            margin-top: -8px;
+        }
+
+        &::before {
+            border-left-color: $destinationDateBorderColor;;
+            border-width: 9px;
+            margin-top: -9px;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-right: 72px;
+        margin-bottom: 0;
+
+        span {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: $white; 
+        }
+    }
+
+    form {
+        width: 100%;
+
+        .destination-date__destination, .destination-date__date {
+            position: relative;
+            font-size: 1.375rem;
+            font-weight: 300;
+            width: 100%;
+            color: $destinationDateOptionColor;
+            box-sizing: border-box;
+    
+            &::after {
+                position: absolute;
+                top: 7px;
+                right: 15px;
+                font-family: "FontAwesome";
+                color: $inputIconColor;
+            }
+    
+            span {
+                align-self: center;
+                margin:  0 23px 0 21px;
+            }
+    
+            .destination-date__input-wrap {
+                width: 100%;
+    
+               input {
+                    font-size: 1.25rem;
+                    max-height: 49px;
+                    width: 100%;
+                    border: 1px solid $inputBorderColor;
+                    padding: 11px 47px 11px 11px;
+                    box-sizing: border-box;
+                }
+    
+                input[type="text"] {
+                    color: $placeholderColor;
+
+                    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder{
+                        color: $placeholderColor;
+                    } 
+                }
+            }
+        }
+    
+        .destination-date__destination {
+            &::after {
+                content: '\f0ac';
+                font-size: 1.5rem;
+            }
+        }
+    
+        .destination-date__date {
+            &::after {
+                content: '\f073';            
+            }
+    
+            span {
+                margin-left: 28px;
+            }
+        }
+    
+        button {
+            margin-left: 28px;
+        }
+    
+        .btn {
+            max-height: 49px;
+            min-width: 108px;
+            font-size: 1.25rem;
+            border: none;
+            border-radius: initial;
+            background: $hoverColor;
+            color: white;
+        }
+    }
+}

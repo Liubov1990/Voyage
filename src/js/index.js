@@ -1,3 +1,5 @@
-import bootstrap from 'bootstrap';
-import '../styles/scss/index.scss';
+// Compoments
+import "./components/datepicker"
 
+// Styles
+import '../styles/scss/index.scss';

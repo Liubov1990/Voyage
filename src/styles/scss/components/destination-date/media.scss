@@ -1,0 +1,64 @@
+@media (max-width: 1199.98px) {
+    .destination-date {
+        height: auto !important;
+
+        .destination-date__arrow-block {
+            display: none !important;
+        }
+
+        form {
+            flex-direction: column;
+
+            .destination-date__destination, .destination-date__date{
+                padding-top: 10px;
+
+                &::after {
+                   top: 17px !important;
+                }
+
+                span {
+                    display: inline-block;
+                    width: 70px;
+                    margin-left: 0 !important;
+                }
+            }
+
+            button {
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .destination-date__arrow-block {
+        display: none !important;
+    }
+
+    form {
+        .destination-date__destination, .destination-date__date{
+            &::after {
+                line-height: 0.9;
+            }
+
+            span {
+                font-size: 1rem;
+            }
+
+            .destination-date__input-wrap {
+                input {
+                     padding: 5px 47px 5px 11px !important;
+                }
+
+                input[type="text"] {
+                    font-size: 1rem !important;
+                   
+                }
+            }
+        }
+
+        .btn {
+            font-size: 1rem !important;
+        }
+    }
+}
