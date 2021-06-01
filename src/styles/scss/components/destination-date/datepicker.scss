@@ -3,7 +3,7 @@
 }
 
 .datepicker--nav-action:hover, .datepicker--nav-title:hover {
-    background: $destinationDateBorderColorLight;
+    background: $carouselBotomBorderColorLight;
 }
 
 .datepicker--day-name {
@@ -31,7 +31,7 @@
 }
 
 .datepicker--cell.-in-range- {
-    background: $destinationDateBorderColorLight;
+    background: $carouselBotomBorderColorLight;
 }
 
 .datepicker--cell.-in-range-.-focus- {
@@ -63,5 +63,5 @@
 }
 
 .datepicker--button:hover {
-    background: $destinationDateBorderColorLight;
+    background: $carouselBotomBorderColorLight;
 }

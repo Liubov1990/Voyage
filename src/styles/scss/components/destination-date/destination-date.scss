@@ -9,7 +9,7 @@
     .destination-date__arrow-block {
         position: relative;
         height: 100%;
-        border-right: 1px solid $destinationDateBorderColor;
+        border-right: 1px solid $carouselBotomBorderColor;
         background: $backgroundColor;
         color: $findHolidaysColor;
         margin-right: 5px;
@@ -30,7 +30,7 @@
         }
 
         &::before {
-            border-left-color: $destinationDateBorderColor;;
+            border-left-color: $carouselBotomBorderColor;;
             border-width: 9px;
             margin-top: -9px;
         }
