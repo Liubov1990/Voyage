@@ -20,6 +20,7 @@ header {
                 display: flex;
                 align-items: center;
                 padding: 0 15px;
+
                 @include smallTwoColoursBorder;
             }
             i {
@@ -34,22 +35,15 @@ header {
                 text-transform: uppercase;
             }
 
-            // .header-bar--mod {
-            //     border-left: 1px solid $werticalLineColor ;
-            //     // box-shadow: -1px 0px 0px 0px #374d63;
-            //     // @include smallTwoColoursBorder;
-            // }
-
             i {
                 height: 40px;
                 display: flex;
                 align-items: center;
                 padding: 0 15px;
+
                 @include smallTwoColoursBorder;
             }
-            
         }
-    
     }
 
     .navbar {
@@ -80,15 +74,15 @@ header {
             }
             
             .navigation__search {
-                align-self: center;
                 position: relative;
-                box-sizing: border-box;
+                align-self: center;
                 width: 42px;
                 height: 42px;
                 border: 3px solid $backgroundColor;
                 border-radius: 100px;
-                cursor: pointer;
                 margin-left: 15px;
+                cursor: pointer;
+                box-sizing: border-box;
 
                 i {
                     position: absolute;
@@ -97,21 +91,7 @@ header {
                     font-size: 1.25rem;
                     color: $backgroundColor;
                 }
-            }
-            
+            }   
         }
-
     }
-
 }
-
-
-
-
-
-
-
-// button{
-//     background-color: transparent;
-//     color: $whiteColor;
-// }
