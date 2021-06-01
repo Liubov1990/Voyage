@@ -9,17 +9,23 @@
         form {
             flex-direction: column;
 
-            .destination-date__destination, .destination-date__date{
+            .destination-date__destination, .destination-date__date {
                 padding-top: 10px;
 
                 &::after {
-                   top: 17px !important;
+                   top: 14px !important;
                 }
 
                 span {
                     display: inline-block;
                     width: 70px;
                     margin-left: 0 !important;
+                }
+
+                .destination-date__input-wrap {
+                    input {
+                        padding: 7px 47px 7px 11px !important;
+                    }
                 }
             }
 
@@ -31,34 +37,92 @@
 }
 
 @media (max-width: 767.98px) {
-    .destination-date__arrow-block {
-        display: none !important;
-    }
-
-    form {
-        .destination-date__destination, .destination-date__date{
-            &::after {
-                line-height: 0.9;
-            }
-
-            span {
-                font-size: 1rem;
-            }
-
-            .destination-date__input-wrap {
-                input {
-                     padding: 5px 47px 5px 11px !important;
+    .destination-date {
+        .destination-date__arrow-block {
+            display: none !important;
+        }
+    
+        form {
+            .destination-date__destination, .destination-date__date {
+                padding-top: 7px !important;
+    
+                &::after {
+                    line-height: 0.9;
                 }
-
-                input[type="text"] {
-                    font-size: 1rem !important;
-                   
+    
+                span {
+                    font-size: 1rem;
                 }
+    
+                .destination-date__input-wrap {
+                    input {
+                         padding: 5px 47px 5px 11px !important;
+                    }
+    
+                    input[type="text"] {
+                        font-size: 1rem !important;
+                       
+                    }
+                }
+            }
+    
+            button {
+                margin: 7px 0 !important;
+            }
+    
+            .btn {
+                font-size: 1rem !important;
             }
         }
+    }
+}
 
-        .btn {
-            font-size: 1rem !important;
+@media (max-width: 575.98px) {
+    .destination-date {
+        form {
+            .destination-date__destination, .destination-date__date {
+                padding-top: 5px !important;
+    
+                &::after {
+                    line-height: 0.5;
+                }
+    
+                span {
+                    font-size: 0.7rem;
+                    margin-right: 0 !important;
+                }
+    
+                .destination-date__input-wrap {
+                    input {
+                         padding: 5px 47px 5px 11px !important;
+                    }
+    
+                    input[type="text"] {
+                        font-size: 0.7rem !important;
+                       
+                    }
+                }
+            }
+    
+            .destination-date__destination {
+                &::after {
+                    font-size: 1.2rem !important;
+                }
+            }
+    
+            .destination-date__date {
+                &::after {
+                    font-size: 1.1rem;
+                }
+            }
+    
+            button {
+                margin: 5px 0 !important;
+            }
+    
+            .btn {
+                font-size: 0.7rem !important;
+            }
         }
     }
 }
