@@ -1,0 +1,206 @@
+@import "./media.scss";
+
+main {
+    .offers {
+        text-align: center;
+        padding: 125px 0 0;
+
+        h2 {
+            font-size: 1.563rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $backgroundColor;
+        }
+        p {
+            font-size: 1rem;
+            color: #626262;
+            margin-bottom: 15px;
+        }
+
+        .offers__cards {
+            .card {
+                width: 277px;
+                max-width: 277px;
+                height: auto;
+                background-color: $cardBackgroundColor;
+                border: 4px solid $cardBackgroundColor;
+                margin: 75px 10px;
+                padding: 0;
+
+                img {
+                    display: inline-block;
+                    align-self: center;
+                    width: 100%;
+                    min-height: 197px;
+                    border-radius: unset;
+                }
+
+                .card-body {
+                    padding: 0;
+
+                    .dropdown {
+                        position: relative;
+
+                        button {
+                            font-size: 0.938rem;
+                            line-height: 1.3;
+                            text-transform: capitalize;
+                            width: 100%;
+                            height: 100%;
+                            min-height: 58px;
+                            background: $cardBackgroundColor;
+                            color: $dropdownColor;
+                            text-align: left;
+                            border: none;
+                            border-radius: 0;
+                            overflow: hidden;
+                            padding-left: 15px;
+
+                            span {
+                                font-size: 0.813rem;
+                                display: inline-block;
+                            }
+                        }
+
+                        .dropdown-toggle::after {
+                            content: "\f107";
+                            position: absolute;
+                            top: 17%;
+                            right: 5%;
+                            font-family: "FontAwesome";
+                            font-size: 1.813rem;
+                            color: $backgroundColor;
+                            border: none;
+                        }
+                    }
+                }
+
+                &:hover {
+                    width: 277px;
+                    height: auto;
+                    background: #1dd1af;
+                    border: 4px solid #1dd1af;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+
+                    img {
+                        // height: 100%;
+                        min-height: 223px;
+                    }
+
+                    .card-body {
+                        .dropdown {
+                            button {
+                                min-height: 77px;
+                                background: $backgroundColor;
+                                color: $whiteColor;
+                            }
+
+                            .dropdown-toggle::after {
+                                top: 25%;
+                                color: $whiteColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .card--out-of-range {
+                opacity: 0.5;
+            }
+
+            .card--active {
+                margin-top: 75px;
+                margin-bottom: 0;
+
+                .card-body {
+                    .dropdown {
+
+                        .dropdown-toggle::after {
+                            display: none;
+                        } 
+                    }
+                }
+
+                .dropdown-menu {
+                    position: unset;
+                    display: block;
+                    height: auto;
+                    min-width: 100%;
+                    padding: 0;
+                    list-style: none;
+                    background-color: $cardBackgroundColor;
+                    border: none;
+                    padding: 6px 12px 6px 15px;
+
+                    li {
+                        font-size: 1rem;
+                        line-height: 25px;
+                        color: $backgroundColor;
+                        margin-top: 15px;
+                    }
+
+                    .expires {
+                        position: relative;
+                        margin: 25px 0 3px;
+                        cursor: pointer;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -10px;
+                            left: 0;
+                            height: 1px;
+                            width: 160px;
+                            border-top: 1px dashed $inputIconColor;
+                        }
+
+                        &::after {
+                            content: "\f106";
+                            position: absolute;
+                            bottom: 5%;
+                            right: 5%;
+                            font-family: "FontAwesome";
+                            font-size: 1.813rem;
+                            color: $backgroundColor;
+                        }
+
+                    }
+
+                    i {
+                        font-size: 1.6rem;
+                        color: $hoverColor;
+                        vertical-align: middle;
+                        margin-right: 7px;
+                    }
+                }
+
+                &:hover {
+                    border: 4px solid $cardBackgroundColor;
+                    background: $cardBackgroundColor;
+                    margin-top: 75px;
+                    margin-bottom: 0;
+
+                    img {
+                        min-height: 197px;
+                    }
+
+                    .card-body {
+                        .dropdown {
+                            button {
+                                min-height: 58px;
+                                background: $cardBackgroundColor;
+                                color: $dropdownColor;
+                                cursor: unset;
+                            }
+    
+                            .dropdown-toggle::after {
+                                display: none;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
