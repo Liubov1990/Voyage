@@ -1,0 +1,65 @@
+.holidays-type {
+    position: relative;
+    width: 100%;
+    background: url(/images/holidayType.png) no-repeat center;
+    background-size: cover;
+    min-height: 517px;
+    text-align: center;
+
+    h2 {
+        font-size: 1.563rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 70px;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .holidays-type__choices {
+        margin: 40px auto 100px;
+
+        .row-maker {
+            @include make-row();
+
+            .holidays-type__choice {
+                @include make-col-ready;
+                    width: 158px;
+                    height: 158px;
+                    border: 5px solid $whiteColor;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    padding: 33px 20px;
+                    margin: 50px 20px;
+                    box-sizing: border-box;
+
+                i {
+                    display: block;
+                    font-size: 5rem;
+                    margin-bottom: 50px;
+                }
+
+                span {
+                    font-size: 1.25rem;
+                    color: $holidaysChoiceColor;
+                }
+
+                &:hover {
+                    border-color: $hoverColor;
+
+                    i {
+                        color: $hoverColor;
+                    }
+
+                    span {
+                        color: $hoverColor;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }       
+    }
+}
+
