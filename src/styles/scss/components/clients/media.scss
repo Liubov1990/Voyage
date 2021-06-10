@@ -1,0 +1,58 @@
+@media (max-width: 1200px) {
+    .clients {
+        padding: 60px 0 50px !important;        
+    }
+}
+
+@media (max-width: 797px) { 
+    .clients {
+        padding: 30px 0 10px !important;
+
+        h2 {
+            font-size: 1.25rem !important;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+
+        .clients__reviews {
+            margin-top: 30px !important;
+
+            .clients__review {
+                min-width: 400px !important;
+                padding: 20px 20px 20px 15px !important;
+
+                .clients__name {
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 517px) {
+    .clients {
+        padding-top: 15px !important; 
+
+        h2 {
+            font-size: 1rem !important;
+        }
+        p {
+            font-size: 0.7rem !important;
+        }
+
+        .clients__reviews {
+            .clients__review {
+                min-width: 310px !important;
+                padding: 10px 10px 10px 5px !important;
+
+                p {
+                    font-size: 0.725rem !important;
+                }
+                span {
+                    font-size: 0.625rem !important;
+                }
+            }
+        }
+    }
+}
