@@ -1,0 +1,99 @@
+.form-window {
+    max-width: 500px;
+    color: $backgroundColor;
+    border-radius: 5px;
+    border: 2px solid $hoverColor;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    p {
+        margin-bottom: 8px;
+    }
+    a {
+        color: $backgroundColor;
+        font-weight: 600;
+        &:hover {
+            color: $hoverColor;
+        }
+    }
+    form {
+        label {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            span {
+                color: red;
+            }
+        }
+        input {
+            border: 1px solid $inputBorderColor;
+            padding: 7px;
+            margin-bottom: 20px;
+        }
+        input[type="text"]:focus, 
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            outline: 0;
+            background: $white;
+        }
+        // input[type="text"]:valid, 
+        // input[type="password"]:valid,
+        // input[type="email"]:valid {
+        //     background: $hoverColorLight;
+        // }
+        input[type="text"]:invalid:not(:focus):not(:placeholder-shown), 
+        input[type="password"]:invalid:not(:focus):not(:placeholder-shown),
+        input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+            background: $denyColor;
+        }
+        // input[type="text"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements, 
+        // input[type="password"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements,
+        // input[type="email"]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements {
+        //     // max-height: 200px;
+        //     // padding: 0 20px 30px;
+        //     display: block;
+        // }
+        .requirements {
+           display: none;
+           font-style: italic;
+           color: red;
+           max-height: 200px;
+           padding: 0 20px 30px;
+           transition: 0.30s;
+           overflow: hidden;
+        }
+        button, .redirection {
+            width: 130px;
+            color: $whiteColor;
+            background: $hoverColor;
+            border: none;
+            box-shadow: none;
+            margin-bottom: 30px;
+        }
+
+        button {
+            height: 40px;
+        }
+
+        .redirection {
+            height: auto;
+        }
+    }
+    .notification {
+        border-radius: 5px;
+        border: 2px solid $hoverColor;
+        background: $clientCountryColor;
+        padding: 10px;
+        padding-bottom: 2px;
+        margin-top: 22px;
+    }
+}
+
+.active-page {
+    color: $hoverColor;
+    a {
+        color: $hoverColor;
+        display: inline-block;
+        pointer-events: none;
+    }
+}

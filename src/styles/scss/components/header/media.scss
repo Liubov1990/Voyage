@@ -19,7 +19,10 @@
                     border-right: none;
                     box-shadow: none;  
                     padding-right: 0px;
-                }   
+                }
+                div {
+                    padding: 0 30px 0 15px;
+                }
             }
 
             .header-bar__social {
@@ -48,6 +51,11 @@
 @media (max-width: 575.98px) {
     header {
         .header-bar {
+            .header-bar__autorization {
+                div {
+                    padding: 0 15px;
+                }
+            }
             .header-bar__social {
                 width: 100%;
                 padding-top: 4px;

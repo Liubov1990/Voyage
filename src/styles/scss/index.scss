@@ -12,6 +12,10 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 
+//pages
+
+@import "./pages/form.scss";
+
 //components
 @import "./components/header/header.scss";
 @import "./components/slider/slider.scss";

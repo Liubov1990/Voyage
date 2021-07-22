@@ -85,14 +85,6 @@
                     padding: 11px 47px 11px 11px;
                     box-sizing: border-box;
                 }
-    
-                input[type="text"] {
-                    color: $placeholderColor;
-
-                    &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder{
-                        color: $placeholderColor;
-                    } 
-                }
             }
         }
     

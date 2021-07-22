@@ -80,6 +80,14 @@ const config = {
     ],
   },
   plugins: [
+    // new HtmlWebPackPlugin({
+    //   filename: 'index.html',
+    //   template: './src/index.html',
+    // }), // Generates default index.html
+    // new HtmlWebPackPlugin({  // Also generate a test.html
+    //   filename: 'agentLogin.html',
+    //   template: './src/agentLogin.html',
+    // }),
     new Dotenv({
       path: "./.env"
     }),
@@ -98,6 +106,15 @@ const config = {
       include: 'initial',
     }),
     new CssUrlRelativePlugin(),
+    // new HTMLWebpackPlugin({
+    //   filename: 'index.html',
+    //   template: './index.html'
+    // }),
+    // new HTMLWebpackPlugin({
+    //   filename: 'agentLogin.html',
+    //   template: './agentLogin.html'
+    // }),
+    
   ],
   devServer: {
     contentBase: path.join(__dirname, 'src'),
@@ -125,10 +142,11 @@ if (!IS_DEV) {
 
   config.optimization.minimizer.push(
     new TerserPlugin(),
-    new OptimizeCSSAssetsPlugin({})
+    new OptimizeCSSAssetsPlugin({}),
   );
 }
 
+// const files = glob.sync('./src/**/*.html');
 const files = glob.sync('./src/*.html');
 
 files.forEach(htmlFile => {
@@ -137,8 +155,18 @@ files.forEach(htmlFile => {
       filename: path.basename(htmlFile),
       template: htmlFile,
       minify: !IS_DEV,
-    })
+      inject: true,
+    }),
   );
 });
+    // new HtmlWebpackPlugin({
+    //   filename: 'index.html',
+    //   template: './src/index.html',
+    // }), // Generates default index.html
+    // new HtmlWebpackPlugin({  // Also generate a test.html
+    //   filename: 'agentLogin.html',
+    //   template: './src/pages/agentLogin/agentLogin.html',
+    // }),
+
 
 module.exports = config;

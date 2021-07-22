@@ -48,6 +48,7 @@
 
                 &:hover {
                     border-color: $hoverColor;
+                    transition: 0.3s;
 
                     i {
                         color: $hoverColor;

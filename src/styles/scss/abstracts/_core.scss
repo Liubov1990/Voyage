@@ -32,13 +32,23 @@ a {
   text-decoration: none;
   color: $whiteColor;
   cursor: pointer;
+  outline: none;
 
-  &:hover, &:focus {
+  &:hover {
     outline: none;
     text-decoration: none;
     color: $hoverColor; 
-    
   }
+
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: 0 none !important; 
+  } 
+}
+
+a:hover, div:hover, button:hover {
+  transition: 0.3s;
 }
 
 .btn:focus {
@@ -53,6 +63,12 @@ main {
   flex-direction: column;
 }
 
+input[type="text"], input[type="email"] {
+  color: $placeholderColor;
 
+  &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder{
+      color: $placeholderColor;
+  } 
+}
   
   

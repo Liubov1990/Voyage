@@ -16,6 +16,11 @@ header {
             .header-bar--pdd {
                 padding-left: 0;
             }
+            .header-bar--rline {
+                span {
+                    text-transform: capitalize;
+                }
+            }
             div {
                 display: flex;
                 align-items: center;
@@ -45,7 +50,6 @@ header {
             }
         }
     }
-
     .navbar {
         max-height: 90px;
         text-transform: uppercase;
