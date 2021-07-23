@@ -57,7 +57,7 @@
        <!-- Registration -->
   <div class="container-xl d-flex justify-content-center">
     <div class="form-window d-flex flex-column">
-      <form action="#" class="d-flex flex-column">
+      <form action="#" method=POST class="d-flex flex-column">
         <div class="d-flex flex-column">
           <label for="user_name"><span>&midast;</span> Username:</label>
           <input required type="text" id="user_name" name="user_name" placeholder=" " />          
@@ -78,7 +78,6 @@
           <input required type="email" id="user_email" name="user_email" placeholder=" " />          
         </div>
         <!-- Модальное окно -->
-        <!-- <button type="submit" class="sign-in" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</button> -->
         <button type="submit" class="sign-in">Sign up</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -90,14 +89,12 @@
                 <p>You will be redirected to the Home page.</p>
               </div>
               <div class="modal-footer">
-                <!--  ---------- <button type="button" class="btn btn-secondary redirection" data-bs-dismiss="modal">Ok</button> -->
-                <a class="btn btn-secondary redirection" data-bs-toggle="modal" href="./index.html" role="button">Ok</a>
-                <!-- <a class="btn btn-secondary redirection" data-bs-toggle="modal" role="button">Ok</a> -->
+                <a class="btn btn-secondary redirection" href="./index.html" role="button">Ok</a>
               </div>
             </div>
           </div>
         </div>
-
+        
       </form>
       <p><a href="#">Forget password?</a></p>
       <p><a href="#">Already have an account</a></p>
