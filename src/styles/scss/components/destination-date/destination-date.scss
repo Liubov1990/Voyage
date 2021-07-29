@@ -78,8 +78,9 @@
     
                input {
                     font-size: 1.25rem;
-                    max-height: 49px;
+                    height: 49px;
                     width: 100%;
+                    color: $backgroundColor;
                     border: 1px solid $inputBorderColor;
                     padding: 11px 47px 11px 11px;
                     box-sizing: border-box;

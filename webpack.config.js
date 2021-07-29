@@ -13,7 +13,7 @@ const IS_DEV = process.env.NODE_ENV === 'dev';
 const config = {
   mode: IS_DEV ? 'development' : 'production',
   devtool: IS_DEV ? 'eval' : 'source-map',
-  entry: './src/js/index.js',
+  entry: ["babel-polyfill", './src/js/index.js'],
   output: {
     filename: 'js/[name].[hash].js',
     path: path.resolve(__dirname, 'dist'),
@@ -80,14 +80,6 @@ const config = {
     ],
   },
   plugins: [
-    // new HtmlWebPackPlugin({
-    //   filename: 'index.html',
-    //   template: './src/index.html',
-    // }), // Generates default index.html
-    // new HtmlWebPackPlugin({  // Also generate a test.html
-    //   filename: 'agentLogin.html',
-    //   template: './src/agentLogin.html',
-    // }),
     new Dotenv({
       path: "./.env"
     }),
@@ -106,15 +98,6 @@ const config = {
       include: 'initial',
     }),
     new CssUrlRelativePlugin(),
-    // new HTMLWebpackPlugin({
-    //   filename: 'index.html',
-    //   template: './index.html'
-    // }),
-    // new HTMLWebpackPlugin({
-    //   filename: 'agentLogin.html',
-    //   template: './agentLogin.html'
-    // }),
-    
   ],
   devServer: {
     contentBase: path.join(__dirname, 'src'),
@@ -146,7 +129,6 @@ if (!IS_DEV) {
   );
 }
 
-// const files = glob.sync('./src/**/*.html');
 const files = glob.sync('./src/*.html');
 
 files.forEach(htmlFile => {
@@ -159,14 +141,5 @@ files.forEach(htmlFile => {
     }),
   );
 });
-    // new HtmlWebpackPlugin({
-    //   filename: 'index.html',
-    //   template: './src/index.html',
-    // }), // Generates default index.html
-    // new HtmlWebpackPlugin({  // Also generate a test.html
-    //   filename: 'agentLogin.html',
-    //   template: './src/pages/agentLogin/agentLogin.html',
-    // }),
-
 
 module.exports = config;

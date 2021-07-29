@@ -16,7 +16,7 @@
     <!-- HEADER COMPONENT -->
     <header>
       <div class="wrapper">
-        <div class="header-bar d-flex justify-content-between container-xl">
+        <div id="up" class="header-bar d-flex justify-content-between container-xl">
           <div class="header-bar__autorization d-flex justify-content-between">
             <a href="./agent-login.html" data-name="agent-login">
               <div class="header-bar--pdd">
@@ -137,11 +137,11 @@
                   <span>holidays</span>
                 </p>
               </div>
-              <form action="post" class="d-flex justify-content-between">
+              <form action="post" class="d-flex justify-content-between" id="search-destination-date-form">
                 <div class="destination-date__destination d-flex">
                   <span>Where</span>
                   <div class="destination-date__input-wrap d-flex">
-                    <input type="text" placeholder="destination" />
+                    <input id="destination" type="text" placeholder="destination" autocomplete="off"/>
                   </div>
                 </div>
                 <div class="destination-date__date d-flex">
@@ -454,7 +454,7 @@
           </ul>
         </nav>
         <span class="footer__copyright">Copyright @voyage. All Right Reserved</span>
-        <div class="button-up"></div>
+        <a href="index.html#up" class="up"><div class="button-up"></div></a>
       </div>
     </footer>
   </body>

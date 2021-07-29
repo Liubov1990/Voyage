@@ -8,5 +8,9 @@ import "./components/active-page";
 import "./components/carousel";
 import "./components/agent-login";
 
+// API
+
+import "./api/search-destination"
+
 // Styles
 import '../styles/scss/index.scss';

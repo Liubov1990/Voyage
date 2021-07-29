@@ -138,9 +138,15 @@ footer {
             font-size: 0.813rem;
             color: $holidaysChoiceColor;
         }
+
+        .up:hover {
+            color: $white;
+        }
+
         .button-up {
             position: relative;
             cursor: pointer;
+            
             &::before {
                 content: "\f062";
                 position: absolute;

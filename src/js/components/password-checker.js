@@ -53,25 +53,3 @@ if (window.location.pathname === "/registration.html") {
     myModal.show();
   });
 }
-
-
-// export const checkInputSymbols = (node) => {
-//   const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/;
-
-//   return node.value.length >= 6 && node.value.match(regex);
-// };
-
-// export function toggleRequirments(requirements, pass) {
-//   requirements.style.display = "block";
-//   if (checkInputSymbols(pass)) {
-//     requirements.style.display = "none";
-//   }
-// }
-
-// export function checkFirstPass(requirements, pass) {
-//   if (checkInputSymbols(pass)) {
-//     requirements.style.display = "none";
-//   } else {
-//     requirements.style.display = "block";
-//   }
-// }

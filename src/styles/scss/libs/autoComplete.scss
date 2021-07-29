@@ -1,0 +1,32 @@
+.autoComplete_wrapper {
+    width: 100%;
+}
+
+.autoComplete_wrapper > input {
+    border-radius: 0;
+}
+
+.autoComplete_wrapper > input::placeholder {
+    color: #8a8a8a;
+    // transition: none;
+}
+
+.autoComplete_wrapper > ul > li {
+    color: #626262;
+}
+
+.autoComplete_wrapper > ul > li:hover {
+    background-color: rgba(58, 78, 97, 0.2);
+}
+
+.autoComplete_wrapper > ul > li mark {
+    color: #1dd2af;
+}
+
+@media (max-width: 575.98px) {
+    .autoComplete_wrapper > ul > li {
+        font-size: 0.7rem !important;
+  }
+}
+
+   

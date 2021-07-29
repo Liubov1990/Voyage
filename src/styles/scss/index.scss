@@ -3,6 +3,10 @@
 @import "../css/reset.css";
 
 @import "~air-datepicker/dist/css/datepicker.min.css";
+@import "~@tarekraafat/autocomplete.js/dist/css/autoComplete.02.css";
+
+// libs
+@import "./libs/autoComplete.scss";
 
 // abstracts
 @import "./abstracts/bootstrap";
@@ -13,7 +17,6 @@
 @import "./abstracts/variables";
 
 //pages
-
 @import "./pages/form.scss";
 
 //components
