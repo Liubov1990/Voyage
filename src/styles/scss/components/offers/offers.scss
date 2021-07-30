@@ -16,9 +16,11 @@ main {
         }
 
         .offers__cards {
+            overflow: hidden;
+            
             .card {
                 width: 277px;
-                max-width: 277px;
+                min-width: 277px;
                 height: auto;
                 background-color: $cardBackgroundColor;
                 border: 4px solid $cardBackgroundColor;
@@ -82,21 +84,25 @@ main {
                     margin-bottom: 50px;
 
                     img {
-                        // height: 100%;
                         min-height: 223px;
+                        transition: all 0.3s;
                     }
 
                     .card-body {
+                        transition: all 0.3s;
                         .dropdown {
+                            transition: all 0.3s;
                             button {
                                 min-height: 77px;
                                 background: $backgroundColor;
                                 color: $whiteColor;
+                                transition: all 0.3s;
                             }
 
                             .dropdown-toggle::after {
                                 top: 25%;
                                 color: $whiteColor;
+                                transition: all 0.3s;
                             }
                         }
                     }

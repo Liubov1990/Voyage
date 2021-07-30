@@ -1,6 +1,7 @@
 .carousel {
     height: 695px;
     min-height: 695px;
+    overflow: hidden;
 
     .carousel-inner {
         overflow: unset;
