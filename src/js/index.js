@@ -8,6 +8,7 @@ import "./components/carousel";
 import "./components/splide-slider";
 import "./components/agent-login";
 import "./components/offers-dropdown";
+import "./components/search-tours-btn";
 
 // API
 import "./api/search-destination"

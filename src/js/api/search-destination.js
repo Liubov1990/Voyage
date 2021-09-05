@@ -1,10 +1,10 @@
 import axios from "axios";
 import autoComplete from "@tarekraafat/autocomplete.js";
 
-if (location.pathname === "/index.html") {
+if (location.pathname === "/" || location.pathname === "/index.html") {
   const apiKey = process.env.CITIES_API_KEY;
   const destination = document.querySelector("#destination");
-
+  
   const autoCompleteJS = new autoComplete({
     selector: "#destination",
     debounce: 1000,
