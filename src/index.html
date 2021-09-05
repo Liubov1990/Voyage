@@ -52,7 +52,7 @@
               <a href="#" title="Pinterest"><i class="fa fa-pinterest header-icon--rpdd"></i></a>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
       <nav class="navbar navbar-expand-sm">
         <div class="navigation__bar d-flex justify-content-between container-xl">
@@ -75,10 +75,8 @@
         </div>
       </nav>
     </header>
-
-    <!-- SLIDER COMPONENT -->
-
-
+    
+    <!-- SLIDER COMPONENT -->    
     <div id="carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -86,10 +84,6 @@
           <div class="carousel-caption d-md-block">
             <h5>To travel is to live</h5>
             <p>You Don't Need Magic to Disappear. All you need is a destination.</p>
-            <div class="explore-buttons">
-              <button type="button" class="btn btn-outline-primary">Show on the map</button>
-              <button type="button" class="btn btn-outline-primary">more info</button>
-            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -97,10 +91,6 @@
           <div class="carousel-caption d-md-block">
             <h5>To travel is to breathe</h5>
             <p>You Don't Need Magic to Disappear. All you need is a destination.</p>
-            <div class="explore-buttons">
-              <button type="button" class="btn btn-outline-primary">Show on the map</button>
-              <button type="button" class="btn btn-outline-primary">more info</button>
-            </div>
           </div>
         </div>
         <div class="carousel-item">
@@ -108,12 +98,13 @@
           <div class="carousel-caption d-md-block">
             <h5>To travel is to love</h5>
             <p>You Don't Need Magic to Disappear. All you need is a destination.</p>
-            <div class="explore-buttons">
-              <button type="button" class="btn btn-outline-primary">Show on the map</button>
-              <button type="button" class="btn btn-outline-primary">more info</button>
-            </div>
           </div>
         </div>
+      </div>
+
+      <div class="explore-buttons">
+        <button type="button" class="btn btn-outline-primary">Show on the map</button>
+        <button type="button" class="btn btn-outline-primary">more info</button>
       </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
@@ -160,166 +151,188 @@
           <div class="offers">
             <h2>Special offers</h2>
             <p>Best 2014 packages where people love to stay!</p>
-            <div class="offers__cards d-flex justify-content-center align-items-start">
-              <div class="card card--out-of-range">
-                <img src="./images/offer_6.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dubai</br>
-                      <span>New Destination!</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
+            <div class="splide offers__splide">
+              <div class="splide__track">
+                <div class="splide__list offers__cards">
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--dubrovnik"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="1" type="button">
+                          Dubrovnik Peer Harbor</br>
+                          <span>Bonus Extras!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--dubai"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="2" type="button">
+                          Dubai</br>
+                          <span>New Destination!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul> 
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--fountain"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="3" type="button">
+                          Rome's Trevi fountain</br>
+                          <span>New Destination!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--dubrovnik"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="4" type="button">
+                          Dubrovnik Peer Harbor</br>
+                          <span>Bonus Extras!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--paris"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="5" type="button">
+                          Paris Highlights</br>
+                          <span>New Destination!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div  class="offers__card">
+                    <div class="offers__image offers__image--mountains"></div>
+                    <div class="card-body">
+                      <div class="dropdown">
+                        <button class="btn offers__dropdown" data-order="6" type="button">
+                          Superstition mountains</br>
+                          <span>New Destination!</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <i class="fa fa-umbrella"></i>
+                            10&deg;c Rainy
+                          </li>
+                          <li>
+                            <i class="fa fa-tag"></i>
+                            &dollar;765*
+                          </li>
+                          <li>
+                            <i class="fa fa-exclamation-triangle"></i>
+                            8days/7nights
+                          </li>
+                          <li class="expires">Expires in : 7 days</li>
+                        </ul>
+                      </div>
+                    </div> 
+                  </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <img src="./images/offer_2.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Rome's Trevi fountain</br>
-                      <span>New Destination!</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./images/offer_3.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dubrovnik Peer Harbor</br>
-                      <span>Bonus Extras!</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card card--active">
-                <img src="./images/offer_4.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Paris Highlights</br>
-                      <span>New Destination!</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <img src="./images/offer_5.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Superstition mountains</br>
-                      <span>New Destination!</span>
-                    </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
-                  </div>
-                </div> 
-              </div>
-              <div class="card">
-                <img src="./images/offer_6.png" class="card-img-top" alt="#">
-                <div class="card-body">
-                  <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dubai</br>
-                      <span>New Destination!</span>
-                    </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li>
-                        <i class="fa fa-umbrella"></i>
-                        10&deg;c Rainy
-                      </li>
-                      <li>
-                        <i class="fa fa-tag"></i>
-                        &dollar;765*
-                      </li>
-                      <li>
-                        <i class="fa fa-exclamation-triangle"></i>
-                        8days/7nights
-                      </li>
-                      <li class="expires">Expires in : 7 days</li>
-                    </ul>
-                  </div>
+                <div class="splide__arrows multi-slider__arrows">
+                  <button class="splide__arrow splide__arrow--prev multi-slider__arrow multi-slider__prevBtn">
+                  </button>
+                  <button class="splide__arrow splide__arrow--next multi-slider__arrow multi-slider__nextBtn">
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <!-- HOLIDAYS-TYPE COMPONENT -->
           <div class="holidays-type">
             <h2>Holidays Type</h2>
@@ -359,21 +372,43 @@
           <div class="clients container-fluid">
             <h2>Happy Clients</h2>
             <p>what customer say about us and why love our services!</p>
-            <div class="clients__reviews d-flex flex-nowrap">
-              <div class="clients__review d-flex flex-column">
-                <p>Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum has been the industry's.</p>
-                <span class="clients__name">Client Name</span>
-                <span>United States</span>
-              </div>
-              <div class="clients__review clients__review--active d-flex flex-column">
-                <p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
-                <span class="clients__name">Client Name</span>
-                <span>United States</span>
-              </div>
-              <div class="clients__review d-flex flex-column">
-                <p>Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum has been the industry's.</p>
-                <span class="clients__name">Client Name</span>
-                <span>United States</span>
+            <div class="clients__splide splide">
+              <div class="splide__track">
+                <div class="splide__list clients__reviews">
+                  <div class="splide__slide clients__review">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum has been the industry's.</p>
+                    <span class="clients__name">Client Name</span>
+                    <span>United States</span>
+                  </div>
+                  <div class="splide__slide clients__review">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+                    <span class="clients__name">Client Name</span>
+                    <span>United States</span>
+                  </div>
+                  <div class="splide__slide clients__review">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typese tting industry. Lorem Ipsum has been the industry's.</p>
+                    <span class="clients__name">Client Name</span>
+                    <span>United States</span>
+                  </div>
+                  <div class="splide__slide clients__review">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+                    <span class="clients__name">Client Name</span>
+                    <span>United States</span>
+                  </div>
+                  <div class="splide__slide clients__review">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typeset industry. Lorem Ipsum has been the industry's standard dummy text ever hen an with new version look.</p>
+                    <span class="clients__name">Client Name</span>
+                    <span>United States</span>
+                  </div>
+                </div>
+                <div class="splide__arrows multi-slider__arrows">
+                  <button class="splide__arrow splide__arrow--prev multi-slider__arrow multi-slider__prevBtn">
+                    <!-- <i class="fa fa-chevron-left"></i> -->
+                  </button>
+                  <button class="splide__arrow splide__arrow--next multi-slider__arrow multi-slider__nextBtn">
+                    <!-- <i class="fa fa-chevron-right"></i> -->
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -387,7 +422,7 @@
           <div class="row-maker">
             <div class="footer__newsletter footer__contact-col">
               <h2>Newsletter</h2>
-              <p>Duis autem vel eum iriure dolor in  hendrerit in vulputate velit esse molestie consequat, vel illum dolore</p>
+              <p>Duis autem vel eum iriure dolor in  hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
               <form action="#">
                 <input type="text" placeholder="Subscribers...">
                 <button type="submit">Go</button>

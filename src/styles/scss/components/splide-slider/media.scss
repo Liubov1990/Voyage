@@ -1,0 +1,55 @@
+// @media (min-width: 2560px) {
+//   .offers #offers-multi-items-slider {
+//     .MS-content {
+//       .item {
+//         width: 14.6% !important;
+//       }
+//     }
+//     .MS-controls {
+//       display: none;
+//     }
+//   }
+// }
+
+// @media (max-width: 1023px) {
+//   .offers #offers-multi-items-slider {
+//     .MS-content {
+//       .item {
+//         width: 33.3% !important;
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 768px) {
+  .multi-slider__arrows {
+    .multi-slider__arrow {
+      width: 40px !important;
+      height: 40px !important;
+      top: calc(50% - 12px) !important;
+
+      svg {
+        width: 1em;
+      }
+    }
+    
+  }
+
+  // .offers #offers-multi-items-slider {
+  //   .MS-content {
+  //     .item {
+  //       width: 46% !important;
+  //     }
+  //   }
+  // }
+}
+
+// @media (max-width: 424px) {
+//   .offers #offers-multi-items-slider {
+//     .MS-content {
+//       .item {
+//         width: 90% !important;
+//       }
+//     }
+//   }
+// }

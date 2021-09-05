@@ -1,0 +1,123 @@
+@media (max-width: 1200px) {
+  main {
+    .offers {
+      padding: 60px 0 50px !important;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  main {
+    .offers {
+      .offers__cards {
+        .offers__card {
+          margin-top: 30px !important;
+          margin-bottom: 30px !important;
+        }
+
+        .offers__card--active {
+          margin-top: 30px !important;
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 797px) {
+  main {
+    .offers {
+      padding: 30px 0 10px !important;
+
+      h2 {
+        font-size: 1.25rem !important;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+
+      .offers__cards {
+        .offers__card {
+          margin-top: 18px !important;
+          margin-bottom: 18px !important;
+          .card-body {
+            .dropdown {
+              .offers__dropdown {
+                font-size: 0.825rem !important;
+                span {
+                  font-size: 0.725rem !important;
+                }
+              }
+            }
+          }
+        }
+
+        .offers__card--active {
+          margin-top: 18px !important;
+          margin-bottom: 18px !important;
+
+          .dropdown-menu {
+            top: -177px !important;
+            height: 180px !important;
+            padding-top: 25px !important;
+
+            li {
+              font-size: 0.825rem !important;
+              margin-top: 4px !important;
+            }
+
+            .expires {
+              margin-top: 15px !important;
+
+              &::before {
+                top: -7px !important;
+              }
+            }
+
+            i {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (max-width: 767px) {
+//   .offers__cards {
+//     .offers__card {
+//       margin: 75px 2% !important;
+//     }
+//   }
+// }
+
+@media (max-width: 517px) {
+  main {
+    .offers {
+      padding-top: 15px !important;
+
+      h2 {
+        font-size: 1rem !important;
+      }
+      p {
+        font-size: 0.7rem !important;
+      }
+    }
+  }
+}
+
+// @media (max-width: 424px) {
+//   .offers__cards {
+//     .offers__card {
+//       margin: 75px 5% !important;
+//     }
+
+    
+//     .offers__card--active {
+//       .dropdown-menu {
+//         padding-left: 100px !important;
+//       }
+//     }
+//   }
+// }

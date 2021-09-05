@@ -1,12 +1,13 @@
 @import "./variables";
 
 body {
-  margin: 0;
+  min-width: 320px;
   font-family: 'Roboto', sans-serif;
   font-size: 0.9375rem;
   font-weight: 400;
   color: $whiteColor;
   background-color: $whiteColor;
+  margin: 0;
 }
   
 .container-fluid{
@@ -22,6 +23,10 @@ body {
   display: flex;
   width: 100%;
   background: $backgroundColor;
+}
+
+main {
+  flex-direction: column;
 }
 
 .inner-color {
@@ -59,9 +64,6 @@ a:hover, div:hover, button:hover {
     box-shadow: none;
 }
 
-main {
-  flex-direction: column;
-}
 
 input[type="text"], input[type="email"] {
   color: $placeholderColor;
@@ -70,5 +72,4 @@ input[type="text"], input[type="email"] {
       color: $placeholderColor;
   } 
 }
-  
-  
+

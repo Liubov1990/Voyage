@@ -1,0 +1,44 @@
+.splide {
+  overflow: hidden;
+  .multi-slider__arrows {
+    .multi-slider__arrow:disabled,
+    .multi-slider__arrow[disabled] {
+      fill: $backgroundColorMedium;
+
+      &:hover {
+        background: $whiteColorLight;
+        opacity: 0.7;
+        transition: none;
+      }
+    }
+
+    .multi-slider__arrow {
+      position: absolute;
+      top: 50%;
+      height: 100%;
+      width: 80px;
+      fill: $backgroundColor;
+      background: $whiteColorLight;
+      border-radius: initial;
+      border: none;
+      padding: 0;
+  
+      &:hover {
+        background: $whiteColorMedium;
+        transition: all 0.3ms;
+      }
+  
+    }
+    .multi-slider__prevBtn {
+      left: 0;
+    }
+    .multi-slider__nextBtn {
+      right: 0;
+    }
+  
+    .multi-slider__prevBtn,
+    .multi-slider__nextBtn {
+      font-size: 1.5rem;
+    }
+  }
+}

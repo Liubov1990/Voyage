@@ -1,210 +1,186 @@
 main {
-    .offers {
-        text-align: center;
-        padding: 125px 0 0;
+  .offers {
+    text-align: center;
+    padding: 125px 0 75px;
 
-        h2 {
-            font-size: 1.563rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: $backgroundColor;
-        }
-        p {
-            font-size: 1rem;
-            color: #626262;
-            margin-bottom: 15px;
-        }
-
-        .offers__cards {
-            overflow: hidden;
-            
-            .card {
-                width: 277px;
-                min-width: 277px;
-                height: auto;
-                background-color: $cardBackgroundColor;
-                border: 4px solid $cardBackgroundColor;
-                margin: 75px 10px;
-                padding: 0;
-
-                img {
-                    display: inline-block;
-                    align-self: center;
-                    width: 100%;
-                    min-height: 197px;
-                    border-radius: unset;
-                }
-
-                .card-body {
-                    padding: 0;
-
-                    .dropdown {
-                        position: relative;
-
-                        button {
-                            font-size: 0.938rem;
-                            line-height: 1.3;
-                            text-transform: capitalize;
-                            width: 100%;
-                            height: 100%;
-                            min-height: 58px;
-                            background: $cardBackgroundColor;
-                            color: $dropdownColor;
-                            text-align: left;
-                            border: none;
-                            border-radius: 0;
-                            overflow: hidden;
-                            padding-left: 15px;
-
-                            span {
-                                font-size: 0.813rem;
-                                display: inline-block;
-                            }
-                        }
-
-                        .dropdown-toggle::after {
-                            content: "\f107";
-                            position: absolute;
-                            top: 17%;
-                            right: 5%;
-                            font-family: "FontAwesome";
-                            font-size: 1.813rem;
-                            color: $backgroundColor;
-                            border: none;
-                        }
-                    }
-                }
-
-                &:hover {
-                    width: 277px;
-                    height: auto;
-                    background: #1dd1af;
-                    border: 4px solid #1dd1af;
-                    margin-top: 50px;
-                    margin-bottom: 50px;
-
-                    img {
-                        min-height: 223px;
-                        transition: all 0.3s;
-                    }
-
-                    .card-body {
-                        transition: all 0.3s;
-                        .dropdown {
-                            transition: all 0.3s;
-                            button {
-                                min-height: 77px;
-                                background: $backgroundColor;
-                                color: $whiteColor;
-                                transition: all 0.3s;
-                            }
-
-                            .dropdown-toggle::after {
-                                top: 25%;
-                                color: $whiteColor;
-                                transition: all 0.3s;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .card--out-of-range {
-                opacity: 0.5;
-            }
-
-            .card--active {
-                margin-top: 75px;
-                margin-bottom: 0;
-
-                .card-body {
-                    .dropdown {
-
-                        .dropdown-toggle::after {
-                            display: none;
-                        } 
-                    }
-                }
-
-                .dropdown-menu {
-                    position: unset;
-                    display: block;
-                    height: auto;
-                    min-width: 100%;
-                    padding: 0;
-                    list-style: none;
-                    background-color: $cardBackgroundColor;
-                    border: none;
-                    padding: 6px 12px 6px 15px;
-
-                    li {
-                        font-size: 1rem;
-                        line-height: 25px;
-                        color: $backgroundColor;
-                        margin-top: 15px;
-                    }
-
-                    .expires {
-                        position: relative;
-                        margin: 25px 0 3px;
-                        cursor: pointer;
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: -10px;
-                            left: 0;
-                            height: 1px;
-                            width: 160px;
-                            border-top: 1px dashed $inputIconColor;
-                        }
-
-                        &::after {
-                            content: "\f106";
-                            position: absolute;
-                            bottom: 5%;
-                            right: 5%;
-                            font-family: "FontAwesome";
-                            font-size: 1.813rem;
-                            color: $backgroundColor;
-                        }
-
-                    }
-
-                    i {
-                        font-size: 1.6rem;
-                        color: $hoverColor;
-                        vertical-align: middle;
-                        margin-right: 7px;
-                    }
-                }
-
-                &:hover {
-                    border: 4px solid $cardBackgroundColor;
-                    background: $cardBackgroundColor;
-                    margin-top: 75px;
-                    margin-bottom: 0;
-
-                    img {
-                        min-height: 197px;
-                    }
-
-                    .card-body {
-                        .dropdown {
-                            button {
-                                min-height: 58px;
-                                background: $cardBackgroundColor;
-                                color: $dropdownColor;
-                                cursor: unset;
-                            }
-    
-                            .dropdown-toggle::after {
-                                display: none;
-                            } 
-                        }
-                    }
-                }
-            }
-        }
+    h2 {
+      font-size: 1.563rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $backgroundColor;
     }
+    p {
+      font-size: 1rem;
+      color: #626262;
+      margin-bottom: 15px;
+    }
+
+    .offers__cards {
+      overflow: hidden;
+
+      .offers__card {
+        height: auto;
+        background-color: $cardBackgroundColor;
+        outline: 4px solid $cardBackgroundColor;
+        box-sizing: border-box;
+        margin: 75px 9px;
+        padding: 0;
+
+        .offers__image {
+          height: 175px;
+        }
+
+        .offers__image--dubai {
+          background: url(/images/offer_6.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .offers__image--fountain {
+          background: url(/images/offer_2.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .offers__image--dubrovnik {
+          background: url(/images/offer_3.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .offers__image--paris {
+          background: url(/images/offer_4.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .offers__image--mountains {
+          background: url(/images/offer_5.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        .offers__image--dubai {
+          background: url(/images/offer_6.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .card-body {
+          padding: 0;
+
+          .dropdown {
+            position: relative;
+
+            .offers__dropdown {
+              font-size: 0.938rem;
+              line-height: 1.3;
+              text-transform: capitalize;
+              width: 100%;
+              height: 100%;
+              min-height: 58px;
+              background: $cardBackgroundColor !important;
+              color: $dropdownColor;
+              text-align: left;
+              border: none;
+              border-radius: 0;
+              overflow: hidden;
+              padding-left: 15px;
+              z-index: 1;
+
+              span {
+                font-size: 0.813rem;
+                display: inline-block;
+              }
+
+              &::after {
+                content: "\f106";
+                position: absolute;
+                top: 17%;
+                right: 5%;
+                font-family: "FontAwesome";
+                font-size: 1.813rem;
+                color: $backgroundColor;
+                border: none;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          height: auto;
+          background: #1dd1af;
+          outline: 4px solid #1dd1af;
+          z-index: 1000;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          transition: all 0.4s;
+        }
+      }
+
+      .offers__card--active {
+        .card-body {
+          .dropdown {
+            .offers__dropdown::after {
+              content: "\f107";
+            }
+
+            .dropdown-menu {
+              position: absolute !important;
+              top: -175px;
+              display: block;
+              height: auto;
+              min-width: 100%;
+              padding: 0;
+              list-style: none;
+              background-color: $cardBackgroundColorDark;
+              border: none;
+              border-radius: inherit;
+              padding: 6px 12px 6px 15px;
+
+              li {
+                font-size: 1rem;
+                line-height: 25px;
+                color: $backgroundColor;
+                margin-top: 15px;
+              }
+
+              .expires {
+                position: relative;
+                margin: 20px 0 3px;
+                cursor: pointer;
+
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: -10px;
+                  left: 0;
+                  height: 1px;
+                  width: 160px;
+                  border-top: 1px dashed $inputIconColor;
+                }
+              }
+
+              i {
+                font-size: 1.6rem;
+                color: $hoverColor;
+                vertical-align: middle;
+                margin-right: 7px;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          outline: 4px solid $cardBackgroundColor;
+          background: $cardBackgroundColor;
+          .card-body {
+            .dropdown {
+              .offers__dropdown {
+                min-height: 58px;
+                background: $cardBackgroundColor;
+                color: $dropdownColor;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
