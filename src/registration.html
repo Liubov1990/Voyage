@@ -58,7 +58,7 @@
     <!-- Registration -->
     <div class="container-xl d-flex justify-content-center">
       <div class="form-window d-flex flex-column">
-        <form action="#" method="POST" class="d-flex flex-column">
+        <form action="#" method="POST" class="registration-form d-flex flex-column">
           <div class="d-flex flex-column">
             <label for="user_name"><span>&midast;</span> Username:</label>
             <input required type="text" id="user_name" name="user_name" placeholder=" " />
@@ -90,15 +90,15 @@
           <button type="submit" class="sign-in">Sign up</button>
           <div
             class="modal fade"
-            id="exampleModal"
+            id="signInModal"
             tabindex="-1"
-            aria-labelledby="exampleModalLabel"
+            aria-labelledby="signInModalLabel"
             aria-hidden="true"
           >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Thank you for signing up <span>Voyage</span> !</h5>
+                  <h5 class="modal-title" id="signInModalLabel">Thank you for signing up <span>Voyage</span> !</h5>
                 </div>
                 <div class="modal-body">
                   <p>You will be redirected to the Home page.</p>
@@ -128,5 +128,10 @@
         </div>
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="wrapper d-flex flex-column">
+      <footer-navigation></footer-navigation>
+    </footer>
   </body>
 </html>

@@ -1,10 +1,12 @@
 import { Carousel } from "bootstrap";
 
-const myCarousel = document.querySelector("#carousel");
-const carousel = new Carousel(myCarousel, {
-  interval: 3000,
-  pause: "hover",
-  wrap: true
-});
+if (location.pathname === "/" || location.pathname === "/index.html") {
+  const myCarousel = document.querySelector("#carousel");
+  const carousel = new Carousel(myCarousel, {
+    interval: 3000,
+    pause: "hover",
+    wrap: true
+  });
 
-carousel.cycle();
+  carousel.cycle();
+}

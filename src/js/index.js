@@ -9,6 +9,7 @@ import "./components/splide-slider";
 import "./components/agent-login";
 import "./components/offers-dropdown";
 import "./components/search-tours-btn";
+import "./components/footer";
 
 // API
 import "./api/search-destination"

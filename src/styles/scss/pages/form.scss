@@ -1,11 +1,15 @@
+// .small-height {
+//     height: 100vh;
+// }
+
 .form-window {
     max-width: 500px;
     color: $backgroundColor;
     border-radius: 5px;
     border: 2px solid $hoverColor;
     padding: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 62px;
+    margin-bottom: 61px;
     p {
         margin-bottom: 8px;
     }
@@ -86,14 +90,5 @@
         padding: 10px;
         padding-bottom: 2px;
         margin-top: 22px;
-    }
-}
-
-.active-page {
-    color: $hoverColor;
-    a {
-        color: $hoverColor;
-        display: inline-block;
-        pointer-events: none;
     }
 }

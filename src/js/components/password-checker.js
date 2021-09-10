@@ -4,8 +4,8 @@ if (window.location.pathname === "/registration.html") {
   const pass = document.getElementById("user_password");
   const passConfirm = document.getElementById("confirm_password");
   const requirements = document.querySelector(".requirements");
-  const form = document.querySelector("form");
-  const myModal = new Modal(document.getElementById('exampleModal'), {backdrop: 'static', keyboard: false});
+  const registrationForm = document.querySelector(".registration-form");
+  const registrationModal = new Modal(document.getElementById('signInModal'), {backdrop: 'static', keyboard: false});
   const inputOkColor = "rgba(29, 210, 175, 0.2)";
   const denyColor = "#ffc0cb";
 
@@ -48,8 +48,8 @@ if (window.location.pathname === "/registration.html") {
     }
   }
 
-  form.addEventListener("submit", (event) => {
+  registrationForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    myModal.show();
+    registrationModal.show();
   });
 }

@@ -59,16 +59,38 @@
     <!-- Login -->
     <div class="container-xl d-flex justify-content-center">
       <div class="form-window d-flex flex-column">
-        <form action="#" method="POST" class="d-flex flex-column">
+        <form action="#" method="POST" class=".customer-form d-flex flex-column">
           <div class="d-flex flex-column">
             <label for="agent_name">Customer name or E-mail:</label>
-            <input type="email" id="agent_name" name="agent_name" placeholder="input Customer name or e-mail" />
+            <input type="text" id="agent_name" name="agent_name" placeholder="input Customer name or e-mail" required/>
           </div>
           <div class="d-flex flex-column">
             <label for="agent_password">Password:</label>
-            <input type="password" id="agent_password" name="agent_password" placeholder="input your password" />
+            <input type="password" id="agent_password" name="agent_password" placeholder="input your password" required/>
           </div>
-          <button type="submit">Sign in</button>
+          <!-- Modal window -->
+          <button type="submit" class="customer-log-in">Sign in</button>
+          <div
+            class="modal fade"
+            id="customerLogInModal"
+            tabindex="-1"
+            aria-labelledby="agentLogInModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="customerLogInModalLabel">You successfully signed-in as Customer!</h5>
+                </div>
+                <div class="modal-body">
+                  <p>You will be redirected to the Home page.</p>
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-secondary redirection" href="./index.html" role="button">Ok</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
         <p><a href="#">Forget password?</a></p>
         <p><a href="#">Create new account</a></p>
@@ -82,5 +104,10 @@
         </div>
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer class="wrapper d-flex flex-column">
+      <footer-navigation></footer-navigation>
+    </footer>
   </body>
 </html>

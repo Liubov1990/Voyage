@@ -1,0 +1,8 @@
+.active-page {
+    color: $hoverColor;
+    a {
+        color: $hoverColor;
+        display: inline-block;
+        pointer-events: none;
+    }
+}
